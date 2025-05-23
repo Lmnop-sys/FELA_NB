@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faites entrer l'accusé : Affaires Criminelles</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>Faites entrer l'accusé : Affaires et thèmes</h1>
+  <p>Rechercher des affaires par thème et/ou région</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="a_propos.html">ℹ️ L’émission</a></li>    
+    <li><a href="affaires_et_themes.html">📜 Affaires</a></li>
+  </ul>
+</nav>
+
+  <main class="contenu">
+
+  <!-- Tags -->
+  <div class="tags">
+    <button class="tag" data-theme="Disparition">Disparitions mystérieuses</button>
+    <button class="tag" data-theme="Manipulation">Manipulation et emprise</button>
+    <button class="tag" data-theme="Crimes en série">Crimes en série</button>
+    <button class="tag" data-theme="Meurtres">Meurtres et assassinats</button>
+    <button class="tag" data-theme="Crimes familiaux">Crimes familiaux</button>
+    <button class="tag" data-theme="Grand banditisme">Grand banditisme</button>
+    <button class="tag" data-theme="Récidives">Récidives</button>
+  </div>
+
+
+  <!-- Tableau -->
+  <table id="tableAffaires">
+    <thead>
+      <tr>
+        <th>Affaire</th>
+        <th>Lieu</th>
+        <th>Thème</th>
+        <th>Episode et saison</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Disparitions -->
+      <tr data-theme="Disparition">
+        <td>Agnès Le Roux</td>
+        <td>Nice</td>
+        <td>Disparue après trahison familiale</td>
+        <td><a href="https://www.youtube.com/watch?v=VfnUG37ZhBw&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">La disparition d'Agnès Le Roux S4 E7 </a></td>
+      </tr>
+      <tr data-theme="Disparition">
+        <td>Affaire Suzanne Viguier</td>
+        <td>Toulouse</td>
+        <td>Disparition suspecte</td>
+        <td><a href="https://www.youtube.com/watch?v=iBA47cTHW5U&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">La disparition de Suzanne Viguier S11 E9 </a></td>
+      </tr>
+
+      <!-- Meurtres -->
+      <tr data-theme="Meurtres">
+        <td>Frères Jourdain</td>
+        <td>Pas-de-Calais</td>
+        <td>Meurtre en réunion</td>
+        <td><a href="https://www.youtube.com/watch?v=pCLkuzu3hyg&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Les frères Jourdain, meurtres au carnaval S6 E8 </a></td>
+      </tr>
+      <tr data-theme="Meurtres">
+        <td>Karine Schaaff</td>
+        <td>Moselle</td>
+        <td>Meurtre</td>
+        <td><a href="https://www.youtube.com/watch?v=GEERBuRRR84&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Stéphane Krauth, le meurtre de Karine Schaaff S8 E16 </a></td>      
+      </tr>
+      <tr data-theme="Meurtres">
+        <td>Affaire du Grand-Bornand</td>
+        <td>Haute-Savoie</td>
+        <td>Famille assassinée</td>
+        <td><a href="https://www.youtube.com/watch?v=c_OT6OApEvA&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">David Hotyat, la tuerie du Grand-Bornand S9 E3 </a></td></tr>      
+      </tr>
+      <tr data-theme="Meurtres">
+        <td>Affaire Willy Bardon</td>
+        <td>Somme</td>
+        <td>Meurtre avec séquestration</td>
+        <td><a href="https://www.youtube.com/watch?v=CIeZP4CyG_0&t=1s&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Willy Bardon, la voix du sang S24 E9 </a></td>
+      </tr>
+
+      <!-- Récidives -->
+      <tr data-theme="Récidives">
+        <td>Bruno Cholet</td>
+        <td>Paris</td>
+        <td>Récidive</td>
+        <td><a href="https://www.rmcbfmplay.com/video/rmc-decouverte/faites-entrer-laccuse/s3e4-bruno-cholet-le-faux-taxi?contentId=Product::NEUF_RMCDEC_RMC00198767&universe=PROVIDER" target="_blank">Bruno Cholet, le faux taxi S18 E5 </a></td>
+      </tr>
+      <tr data-theme="Récidives">
+        <td>Francis Evrard</td>
+        <td>Roubaix</td>
+        <td>Récidive</td>
+        <td><a href="https://www.youtube.com/watch?v=MBwFw_tpURk&t=2s&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Francis Evrard, l’enlèvement du petit Enis S14 E5 </a></td>
+      </tr>
+      <tr data-theme="Récidives">
+        <td>Affaire Louvet/Sajdi</td>
+        <td>Paris</td>
+        <td>Crimes répétés</td>
+        <td><a href="https://www.youtube.com/watch?v=Z4VTbs1AinE&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">La fille indigne et le récidiviste S10 E17 </a></td>
+      </tr>
+      <tr data-theme="Récidives">
+        <td>Agnès Marin</td>
+        <td>Le Chambon-sur-Lignon</td>
+        <td>Violente récidive</td>
+        <td><a href="https://www.rmcbfmplay.com/video/rmc-decouverte/faites-entrer-laccuse/s4e27-agnes-marin-la-mort-au-college?contentId=Product::NEUF_RMCDEC_RMC00212964&universe=PROVIDER" target="_blank">Agnès Marin, la mort au collège S17 E4 </a></td>
+      </tr>
+
+      <!-- Crimes en série -->
+      <tr data-theme="Crimes en série">
+        <td>Affaire Nordahl Lelandais</td>
+        <td>Chambéry</td>
+        <td>Meurtres multiples</td>
+      <td><a href="https://www.youtube.com/watch?v=EWdky00dkc8&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Les secrets de Nordahl Lelandais S24 E1 </a></td>
+      </tr>
+      <tr data-theme="Crimes en série">
+        <td>Affaire Émile Louis</td><td>Auxerre</td>
+        <td>Tueur en série</td>
+        <td>Saison 5 épisode 12</td>
+      </tr>
+
+      <!-- Manipulation et emprise -->
+      <tr data-theme="Manipulation">
+        <td>Jean-Claude Romand</td>
+        <td>Ain / Paris</td>
+        <td>Double vie, meurtres de famille</td>
+        <td><a href="https://www.youtube.com/watch?v=zzTxz7nOOdo&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Jean-Claude Romand, le menteur S7E1</a></td>
+      </tr>
+      <tr data-theme="Manipulation">
+        <td>Affaire Zawadzki</td>
+        <td>Versailles</td>
+        <td>Crime sous emprise</td>
+        <td><a href="https://www.youtube.com/watch?v=Y34_TKqgCos&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Nicole Zawadzki et Michel Trouillard-Perrot, les amants maudits S6 E10 </a></td>
+      </tr>
+      <tr data-theme="Manipulation">
+        <td>Robert Le Dinh</td>
+        <td>Paris</td>
+        <td>Emprise psychologique et chantage</td>
+        <td><a href="https://www.youtube.com/watch?v=ZyYcUtsIEK0&t=1s&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Robert LeDinh, le 'Saint élu'et ses adeptes S14 E1</a></td>
+      </tr>
+
+      <!-- Crimes familiaux -->
+      <tr data-theme="Crimes familiaux">
+        <td>Affaire Daval</td>
+        <td>Gray</td>
+        <td>Meurtre conjugal maquillé</td>
+        <td><a href="https://www.youtube.com/watch?v=6H0XwpXTt1Q&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Jonathan Daval, la trahison du gendre idéal S22 E5 </a></td>
+      </tr>
+      <tr data-theme="Crimes familiaux">
+        <td>Fabienne Kabou</td>
+        <td>Berck-sur-Mer</td>
+        <td>Infanticide</td>
+        <td><a href="https://www.youtube.com/watch?v=72CgDMc9eWM&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Fabienne Kabou, infanticide sur Berck S22 E3</a></td>
+      </tr>
+      <tr data-theme="Crimes familiaux">
+        <td>Famille Troadec</td>
+        <td>Orvault</td>
+        <td>Tuerie familiale</td>
+        <td><a href="https://www.youtube.com/watch?v=FgL9ddudujI&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">Obsession sur les Traodec S23 E1</a></td>
+      </tr>
+      <tr data-theme="Crimes familiaux">
+        <td>Denis Mannechez</td>
+        <td>Picardie</td>
+        <td>Meurtres familiaux</td>
+        <td><a href="https://www.youtube.com/watch?v=k55c6Ed7BEk&ab_channel=Faitesentrerl%E2%80%99accus%C3%A9-Officielle" target="_blank">La loi de Denis Mannechez S23 E9 </a></td>
+      </tr>
+      <tr data-theme="Crimes familiaux">
+        <td>Affaire de la tuerie d'Huos</td>
+        <td>Comminges</td>
+        <td>Meurtres</td>
+        <td>Saison 9 épisode 7</td>
+      </tr>
+
+      <!-- Grand banditisme -->
+      <tr data-theme="Grand banditisme">
+        <td>Casse à la Banque de France</td>
+        <td>Toulon</td><td>Braquage organisé</td>
+        <td>Saison 11 épisode 5</td>
+      </tr>
+      <tr data-theme="Grand banditisme">
+        <td>Pascal Payet</td><td>Marseille</td>
+        <td>Évasion par hélicoptère</td>
+        <td> Saison 23 épisode 10</td>
+      </tr>
+      <tr data-theme="Grand banditisme">
+        <td>Christophe Khider</td>
+        <td>Paris</td>
+        <td>Braquages et évasion</td>
+        <td>Saison 15 épisode 1</td>
+      </tr>
+      <tr data-theme="Grand banditisme">
+        <td>Gang des souris vertes</td>
+        <td>Paris</td>
+        <td>Vols organisés</td>
+        <td><a href="https://www.rmcbfmplay.com/video/rmc-decouverte/faites-entrer-laccuse/s2e17-le-gang-des-souris-vertes?contentId=Product::NEUF_RMCDEC_RMC00202832&universe=PROVIDER" target="_blank">S13 E7 Le gang des souris vertes</a></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+<footer>
+  <p>© Projet éducatif - Affaires criminelles</p>
+  <a href="mailto:nomdumail@mail.com" target="_blank">✉️ Contact</a>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9f9f9 url('brume.jpg') center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;  
+  min-height: 100vh;
+
+}
+
+header, nav, main.contenu, footer {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+header, nav, footer {
+  border-radius: 7px;
+}
+
+/* Header */
+header {
+  background: #2b3642;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+header p {
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+/* Navigation */
+
+nav {
+  background: #294766;
+  padding: 10px 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background: #2b3642;
+}
+
+/* Contenu principal */
+main.contenu {
+  flex: 1;
+  padding: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*  Boutons tags  */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 16px 0;
+  justify-content: center;
+}
+
+button.tag {
+  background: #507086;
+  color: #fff;
+  padding: 8px 14px;
+  margin: 5px 8px 5px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  display: inline-block; 
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.tag.active {
+  background: #2eaac0;
+}
+
+/*  Tableau  */
+#tableAffaires {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+#tableAffaires th, #tableAffaires td {
+  border: 1px solid #ddd;
+  padding: 12px 14px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+#tableAffaires th {
+  background-color: #343e49;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+#tableAffaires tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tableAffaires tr:hover {
+  background-color: #ddd;
+  transition: background-color 0.2s;
+}
+
+#tableAffaires tr:last-child td {
+  border-bottom: none;
+}
+
+/* Footer */
+footer {
+  background: #2b3642;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/*  a_propos.html */
+.contenu p {
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #1c1c1c;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 14px 20px;
+  border-radius: 7px;
+  margin-bottom: 16px;
+}
+
+.contenu ul {
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #1c1c1c;
+  padding: 14px 20px;
+  border-radius: 7px;
+  margin-bottom: 16px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.contenu li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
